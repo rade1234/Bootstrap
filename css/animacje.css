@@ -1,0 +1,32 @@
+.kolko{
+	border-radius:50%;
+	margin:20px;
+}
+.kolko_szejk_ass_pion{
+	position:relative;
+	animation:kolko_szejk_ass_pion_anim 1s infinite;
+}
+.kolko_szejk_ass_poziom{
+	position:relative;
+	animation:kolko_szejk_ass_poziom_anim 1s infinite;
+}
+.kolko_migaj{
+	position:relative;
+	animation:kolko_migaj 1s infinite;
+}
+@keyframes kolko_szejk_ass_pion_anim{
+	0% {top: 0px;}
+	25% {top: -10px;}
+	75% {top: 10px;}
+	100% {top: 1px;}
+}
+@keyframes kolko_szejk_ass_poziom_anim{
+	0% {left: 0px;}
+	50% {left: 100px;}
+	100% {left: 0px;}
+}
+@keyframes kolko_migaj{
+	0% {background-color: #fff;}
+	50% {background-color: #000;}
+	100% {background-color: #fff;}
+}
